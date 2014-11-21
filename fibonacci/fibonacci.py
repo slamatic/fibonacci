@@ -1,6 +1,5 @@
 # functions and fib sequence
 def fib(n):
-    a, b = 0, 1
-    while a < n:
-        print a,
-        a, b = b, a+b
+    if n == 0: return 0
+    elif n == 1: return 1
+    else: return fib(n-1)+fib(n-2)
